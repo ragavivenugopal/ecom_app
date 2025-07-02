@@ -34,15 +34,12 @@ The project is structured into different layers like entity, DAO, utility, and m
 
 
 - **Exception Handling**
-  - CustomerNotFoundException 
-    - Raised when the given customer ID does not exist in the database. 
-    - Used in operations like adding to cart, placing an order, or viewing orders. 
-  - ProductNotFoundException 
-    - Raised when the given product ID is invalid or the product does not exist. 
-    - Used in operations like adding/removing product from cart or placing an order. 
-  - OrderNotFoundException 
-    - Raised when trying to fetch an order that doesn't exist for a customer. 
-    - Used in viewing past orders by customer ID.
+  
+| Exception | Description |
+|-----------|-------------|
+| `CustomerNotFoundException` | Raised when customer ID doesn't exist |
+| `ProductNotFoundException` | Raised when product ID doesn't exist |
+| `OrderNotFoundException` | Raised when order ID doesn't exist |
 
 
 - **General Validations**
